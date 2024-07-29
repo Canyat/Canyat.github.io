@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="../images/logo/moon.png">
   
-  <title>故事 | 梦中的月光 | 梓骍先生</title>
+  <title>生物统计及数据分析——t检验 | 梓骍先生</title>
   
   <meta name="author" content="梓骍先生" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -15,21 +15,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="初恋, 文章区" />
+    <meta name="keywords" content="基础知识区, 生物统计学" />
   
-  <meta name="description" content="我，睡醒了，眼角里，故事化作一缕晶莹流了出来。 我，梦见了她。 闹钟还有29分才会响起，这个早上，我格外精神。要再度入睡？我这样问自己，随后，我否定了这个想法。倘若再次闭上眼睛，刚才的梦境或许能够重现，我又能在梦里，见到想见的人，但29分钟之后，这个梦境会被再度打破，罢了。 我躺在床上，睁着双眼，四周的空气很安静，耳边似乎只传来了似有似无的鸟鸣。我不知道眼神是否迷离，熟悉的天花板并没有通过双眼成像">
+  <meta name="description" content="写在前面这个系列是我纯自学的，没有任何基础，一些概念也不建议背，都是自己总结的，如有错误，请及时联系站主进行更正，谢谢哦~而且不涉及原理，就单纯学一学软件怎么用XD t检验前提 数据是独立的 数据是连续型 样本数据是从总体中随机抽样的 存在方差齐性（各组数据变异性相似） 分布接近正态分布  类型1. 单样本t检验—-确认总体均值是否为某特定值 # 一组人员平均心率是否为65 df &#x3D; n">
 <meta property="og:type" content="article">
-<meta property="og:title" content="故事 | 梦中的月光">
-<meta property="og:url" content="http://example.com/2024/04/30/%E6%96%87%E7%AB%A0%E5%8C%BA/MoonInADream/index.html">
+<meta property="og:title" content="生物统计及数据分析——t检验">
+<meta property="og:url" content="http://example.com/2024/07/29/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E7%94%9F%E7%89%A9%E7%BB%9F%E8%AE%A1%E5%AD%A6%EF%BC%88%E8%87%AA%E5%AD%A6%EF%BC%89/biostatistics03/index.html">
 <meta property="og:site_name" content="梓骍先生">
-<meta property="og:description" content="我，睡醒了，眼角里，故事化作一缕晶莹流了出来。 我，梦见了她。 闹钟还有29分才会响起，这个早上，我格外精神。要再度入睡？我这样问自己，随后，我否定了这个想法。倘若再次闭上眼睛，刚才的梦境或许能够重现，我又能在梦里，见到想见的人，但29分钟之后，这个梦境会被再度打破，罢了。 我躺在床上，睁着双眼，四周的空气很安静，耳边似乎只传来了似有似无的鸟鸣。我不知道眼神是否迷离，熟悉的天花板并没有通过双眼成像">
+<meta property="og:description" content="写在前面这个系列是我纯自学的，没有任何基础，一些概念也不建议背，都是自己总结的，如有错误，请及时联系站主进行更正，谢谢哦~而且不涉及原理，就单纯学一学软件怎么用XD t检验前提 数据是独立的 数据是连续型 样本数据是从总体中随机抽样的 存在方差齐性（各组数据变异性相似） 分布接近正态分布  类型1. 单样本t检验—-确认总体均值是否为某特定值 # 一组人员平均心率是否为65 df &#x3D; n">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/logo/moon.png">
-<meta property="article:published_time" content="2024-04-30T15:59:59.000Z">
-<meta property="article:modified_time" content="2024-07-25T03:18:30.981Z">
+<meta property="article:published_time" content="2024-07-29T02:56:59.000Z">
+<meta property="article:modified_time" content="2024-07-29T03:19:49.324Z">
 <meta property="article:author" content="梓骍先生">
-<meta property="article:tag" content="文章区">
-<meta property="article:tag" content="初恋">
+<meta property="article:tag" content="基础知识区">
+<meta property="article:tag" content="生物统计学">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/logo/moon.png">
   
@@ -158,15 +158,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/04/30/%E6%96%87%E7%AB%A0%E5%8C%BA/MoonInADream/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/07/29/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E7%94%9F%E7%89%A9%E7%BB%9F%E8%AE%A1%E5%AD%A6%EF%BC%88%E8%87%AA%E5%AD%A6%EF%BC%89/biostatistics03/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">故事 | 梦中的月光</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">生物统计及数据分析——t检验</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2024-04-30T15:59:59.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-30</time></li>
+                <li><time datetime="2024-07-29T02:56:59.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-07-29</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">梓骍先生</span>
                 </li>
@@ -175,7 +175,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            1363
+                            622
                         
                         字
                     </li>
@@ -187,44 +187,45 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1721877510981"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1722223189324"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
+                <div class="kratos-post-inner-toc toc-div-class" >
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="toc-number">1.</span> <span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#t%E6%A3%80%E9%AA%8C"><span class="toc-number">2.</span> <span class="toc-text">t检验</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%8F%90"><span class="toc-number">2.1.</span> <span class="toc-text">前提</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.</span> <span class="toc-text">类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%8D%95%E6%A0%B7%E6%9C%ACt%E6%A3%80%E9%AA%8C"><span class="toc-number">2.2.1.</span> <span class="toc-text">1. 单样本t检验</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%8F%8C%E6%A0%B7%E6%9C%ACt%E6%A3%80%E9%AA%8C"><span class="toc-number">2.2.2.</span> <span class="toc-text">2. 双样本t检验</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%88%90%E5%AF%B9%EF%BC%88%E9%85%8D%E5%AF%B9%EF%BC%89t%E6%A3%80%E9%AA%8C"><span class="toc-number">2.2.3.</span> <span class="toc-text">3. 成对（配对）t检验</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#t%E5%80%BC%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">2.3.</span> <span class="toc-text">t值的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E6%83%85%E5%86%B5"><span class="toc-number">2.3.1.</span> <span class="toc-text">一般情况</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%83%85%E5%86%B5"><span class="toc-number">2.3.2.</span> <span class="toc-text">用软件的情况</span></a></li></ol></li></ol></li></ol>
+                </div>
+            
             <hr />
-            <div itemprop="articleBody"><p>我，睡醒了，眼角里，故事化作一缕晶莹流了出来。</p>
-<p>我，梦见了她。</p>
-<p>闹钟还有29分才会响起，这个早上，我格外精神。要再度入睡？我这样问自己，随后，我否定了这个想法。倘若再次闭上眼睛，刚才的梦境或许能够重现，我又能在梦里，见到想见的人，但29分钟之后，这个梦境会被再度打破，罢了。</p>
-<p>我躺在床上，睁着双眼，四周的空气很安静，耳边似乎只传来了似有似无的鸟鸣。我不知道眼神是否迷离，熟悉的天花板并没有通过双眼成像于视皮层中，我确信，我看着的，并不是这个世界。</p>
-<p>六年前，一个雨夜，是我和她的第一次，又或许不是第一次相遇，但那一夜，一定是故事的开始。依稀记得，那天的雨有些许大，有三个人被这场雨拦在了宿舍楼下，其中一个是我，另一个是她，还有一个，应该是一个拿着伞的女生。</p>
-<p>“头大了，我的伞在教室呀。”她似乎在自言自语道。</p>
-<p>距离晚自习还有约摸十分钟，若再不出发，恐怕便有些来不及了。我又瞥了一眼旁边她，想来，她应该会和另外一个女生一起，我便往教学楼走去。</p>
-<p>“等等，要不要一起？”她揪住了我的衣袖，有些急促道。</p>
-<p>“好”，我脱口而出这样一个回答，似乎就在“好”字刚出来的一刻，她钻进了我的伞下。</p>
-<p>伞很小，就像我的世界一样。而她，又突然闯了进来。</p>
-<p>就像是青春校园故事里的情节，雨忽然变大了，而她又像故事里的女主角，往我这边靠了靠，而我，又像故事的男主角，伞往她那边倾了倾。</p>
-<p>于是，肩膀被淋湿了。</p>
-<p>那年，13岁，是最青涩与懵懂的时期。回过神来我才发觉，似乎从那一天起，她的每一次回眸，眼神里似乎藏着别样的情，像是一双巧手，撩拨着，心上那根稚嫩的弦。</p>
-<p>后面的记忆，就像大梦一场，只记得暗恋的羞涩、暧昧的甜蜜，仿佛一切还在昨日，就像是一抬手，我便不经意间触碰了她的脸庞，留下两朵红晕，以及慌乱的心。</p>
-<p>“喊爹！”我只记得她说过这么一句话，我们当时大抵还是会开玩笑以父子相称的。</p>
-<p>“我爱你，父亲也是……爱孩子的嘛。”有一次，她说过这么一句话。她说得很小声，但我假装没有听见，便问她说了什么，她没有回答。</p>
-<p>我想，她应该是喜欢我的。</p>
-<p>我曾做过很多如今看起来能被感叹“真是青春啊”的事情，比如，偷偷学数学。</p>
-<p>她是年级第二，我是班里的倒数第一，为了赶上她，我偷偷把数学学好了，好得能够以帮她解决数学问题为由，和她说那么一小会儿话。</p>
-<p>在学生的世界里，除了学习，“她喜欢他，他又喜欢她”的故事，常常为人津津乐道。我和她，成了学生们口中的那个“他”和“她”。似乎是为了避嫌，我故意疏远了她。</p>
-<p>此后，“他”便不是原来的“他”了。</p>
-<p>听说，她到毕业，都在等我的一句表白……</p>
-<p>有的人，能记得自己暗恋了一个女生四年，而有的人，像我，却有只能在梦里，才会不自觉窥探过去，尝试在碎片之中找寻着她的点滴。</p>
-<p>果然，我还是忘不了她。</p>
-<p>叮铃，闹钟响了。</p>
-<p>原来我还是睡着了。刚刚梦见了什么？算了，梦里的东西就留给月亮吧，是时候起床看看日出了。</p>
-<hr>
-<h1 id="笔者的话："><a href="#笔者的话：" class="headerlink" title="笔者的话："></a>笔者的话：</h1><p>故事是根据学弟分享的小故事改编的，既然到了我笔下，那就要魔改亿下啦桀桀桀。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Canyat/blogima@main/17146589183861714658918014.png"></p>
-<p>我试了一下用稚嫩的笔墨书写那种中学时期的青涩懵懂，但是好像效果不是特别好，颇有些流水账的感觉XD</p>
-<p>毕竟我早就忘记了当初的那种情感了，而且也没有过和女性同撑一把伞的经历，似乎仅有的一次机会也被对方逃掉了（悲）</p>
-<p>总之，初恋的话还是留给曾经的自己吧，人总是要往前走的（</p>
+            <div itemprop="articleBody"><h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>这个系列是我纯自学的，没有任何基础，一些概念也不建议背，都是自己总结的，如有错误，请及时联系站主进行更正，谢谢哦~而且不涉及原理，就单纯学一学软件怎么用XD</p>
+<h1 id="t检验"><a href="#t检验" class="headerlink" title="t检验"></a>t检验</h1><h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><ol>
+<li>数据是独立的</li>
+<li>数据是连续型</li>
+<li>样本数据是从总体中随机抽样的</li>
+<li>存在方差齐性（各组数据变异性相似）</li>
+<li>分布接近正态分布</li>
+</ol>
+<h2 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h2><h3 id="1-单样本t检验"><a href="#1-单样本t检验" class="headerlink" title="1. 单样本t检验"></a>1. 单样本t检验</h3><p>—-<strong>确认总体均值是否为某特定值</strong></p>
+<p><font color="grey"># 一组人员平均心率是否为65</font></p>
+<p>df &#x3D; n - 1</p>
+<h3 id="2-双样本t检验"><a href="#2-双样本t检验" class="headerlink" title="2. 双样本t检验"></a>2. 双样本t检验</h3><p>—-<strong>确认两个不同组的总体均值是否相等</strong></p>
+<p><font color="grey"># 两组人员平均心率是否相同</font></p>
+<p>df &#x3D; n1 + n2 - 2</p>
+<h3 id="3-成对（配对）t检验"><a href="#3-成对（配对）t检验" class="headerlink" title="3. 成对（配对）t检验"></a>3. 成对（配对）t检验</h3><p>—-<strong>确定某个总体的成对测量值之间的差异是否为0</strong></p>
+<p><font color="grey"># 一组人员锻炼前后心率平均差异是否为0</font></p>
+<p>df &#x3D; n - 1</p>
+<h2 id="t值的使用"><a href="#t值的使用" class="headerlink" title="t值的使用"></a>t值的使用</h2><h3 id="一般情况"><a href="#一般情况" class="headerlink" title="一般情况"></a>一般情况</h3><p>以 <strong>t 0.05, 21 &#x3D; 2.080</strong> 为例 <font color="grey"># 这个t值可以说是临界值</font></p>
+<p><strong>0.05</strong> 即 <strong>α &#x3D; 0.05</strong>          <font color="grey"># 95%的置信水平</font></p>
+<p><strong>21</strong> 即 <strong>21个自由度</strong>  <font color="grey"># 需要根据实际应用去算</font></p>
+<p><strong>若统计量 ＞ t      则拒绝原假设H0</strong></p>
+<h3 id="用软件的情况"><a href="#用软件的情况" class="headerlink" title="用软件的情况"></a><strong>用软件的情况</strong></h3><p>软件输出</p>
+<ul>
+<li>Prob &gt; | t |        value</li>
+<li>Prob &gt; t            value</li>
+<li>Prob &lt; t            value</li>
+</ul>
+<p>则直接用P值的方法去检验</p>
+<p>小于0.05or0.01则否定原假设，反之亦然</p>
 </div>
         </div>
         
@@ -278,7 +279,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "http://example.com/2024/04/30/%E6%96%87%E7%AB%A0%E5%8C%BA/MoonInADream/",
+                text: "http://example.com/2024/07/29/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E7%94%9F%E7%89%A9%E7%BB%9F%E8%AE%A1%E5%AD%A6%EF%BC%88%E8%87%AA%E5%AD%A6%EF%BC%89/biostatistics03/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -290,11 +291,13 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "http://example.com/2024/04/30/%E6%96%87%E7%AB%A0%E5%8C%BA/MoonInADream/";
-            const title         = "「故事 | 梦中的月光」";
-            const excerpt       = `我，睡醒了，眼角里，故事化作一缕晶莹流了出来。
-我，梦见了她。
-闹钟还有29分才会响起，这个早上，我格外精神。要再度入睡？我这样问自己，随后，我否定了这个想法。倘若再次闭上眼睛，刚才的梦境或许能够重现，我又能在梦里，见到想见的人，但2...`;
+            const hostUrl       = "http://example.com/2024/07/29/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E7%94%9F%E7%89%A9%E7%BB%9F%E8%AE%A1%E5%AD%A6%EF%BC%88%E8%87%AA%E5%AD%A6%EF%BC%89/biostatistics03/";
+            const title         = "「生物统计及数据分析——t检验」";
+            const excerpt       = `写在前面这个系列是我纯自学的，没有任何基础，一些概念也不建议背，都是自己总结的，如有错误，请及时联系站主进行更正，谢谢哦~而且不涉及原理，就单纯学一学软件怎么用XD
+t检验前提
+数据是独立的
+数据是连续型
+样本数据是从总体中随机抽样的...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -313,10 +316,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/%E5%88%9D%E6%81%8B/" rel="tag">初恋</a>, <a class="tag-none-link" href="/tags/%E6%96%87%E7%AB%A0%E5%8C%BA/" rel="tag">文章区</a>
+                    <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>, <a class="tag-none-link" href="/tags/%E7%94%9F%E7%89%A9%E7%BB%9F%E8%AE%A1%E5%AD%A6/" rel="tag">生物统计学</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-07-25T03:18:30.981Z" itemprop="dateModified">最后编辑：2024-07-25</time>
+                    <time datetime="2024-07-29T03:19:49.324Z" itemprop="dateModified">最后编辑：2024-07-29</time>
                 </div>
             </div>
         </footer>
@@ -325,13 +328,9 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" 我们，是创作者" href="/2024/03/28/文章区/WeAreTheCreators/">&lt; 上一篇</a>
+                <a title=" 随笔 | 属于我自己的时间" href="/2024/07/25/文章区/MyOwnTime/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" 现代诗 | 旅途的中与终" href="/2024/05/01/文章区/TheEndOfTheJourney/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
@@ -343,8 +342,8 @@
         const init = () => {
             console.log('Gitalk loading...');
             const gitalk = new Gitalk(Object.assign({
-                id: '/2024/04/30/%E6%96%87%E7%AB%A0%E5%8C%BA/MoonInADream/',
-                path: '/2024/04/30/%E6%96%87%E7%AB%A0%E5%8C%BA/MoonInADream/'
+                id: '/2024/07/29/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E7%94%9F%E7%89%A9%E7%BB%9F%E8%AE%A1%E5%AD%A6%EF%BC%88%E8%87%AA%E5%AD%A6%EF%BC%89/biostatistics03/',
+                path: '/2024/07/29/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E7%94%9F%E7%89%A9%E7%BB%9F%E8%AE%A1%E5%AD%A6%EF%BC%88%E8%87%AA%E5%AD%A6%EF%BC%89/biostatistics03/'
             }, JSON.parse('{"clientID":"7b8093d3061a99b5b582","clientSecret":"f7c6188fd1e5cf0eac70ccceab90b8e65eac76a3","repo":"Canyat.github.io","owner":"Canyat","admin":["Canyat"],"distractionFreeMode":false}')));
 
             gitalk.render('gitalk-container');
@@ -413,6 +412,18 @@
 </aside>
             
                     <div class="sticky-area">
+                
+                    <aside id="krw-toc" class="widget widget-kratos-toc clearfix toc-div-class" >
+    <div class="photo-background"></div>
+    <h4 class="widget-title no-after">
+        <i class="fa fa-compass"></i>
+        文章目录
+        <span class="toc-progress-bar" role="progressbar" aria-label="阅读进度："></span>
+    </h4>
+    <div class="textwidget">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#t%E6%A3%80%E9%AA%8C"><span class="toc-text">t检验</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%8F%90"><span class="toc-text">前提</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B"><span class="toc-text">类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%8D%95%E6%A0%B7%E6%9C%ACt%E6%A3%80%E9%AA%8C"><span class="toc-text">1. 单样本t检验</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%8F%8C%E6%A0%B7%E6%9C%ACt%E6%A3%80%E9%AA%8C"><span class="toc-text">2. 双样本t检验</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%88%90%E5%AF%B9%EF%BC%88%E9%85%8D%E5%AF%B9%EF%BC%89t%E6%A3%80%E9%AA%8C"><span class="toc-text">3. 成对（配对）t检验</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#t%E5%80%BC%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">t值的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E6%83%85%E5%86%B5"><span class="toc-text">一般情况</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%83%85%E5%86%B5"><span class="toc-text">用软件的情况</span></a></li></ol></li></ol></li></ol>
+    </div>
+</aside>
                 
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
