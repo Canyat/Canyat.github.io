@@ -63,7 +63,26 @@
   
   <style>
     
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/banner.webp');
+      }
     
+    
+    /* Portal page standalone layout */
+    body.is-portal .kratos-hero-2,
+    body:has(.portal-wrapper) .kratos-hero-2 {
+      display: none !important;
+    }
+    body.is-portal #kratos-blog-post,
+    body:has(.portal-wrapper) #kratos-blog-post {
+      padding-top: 75px !important;
+    }
+    @media (max-width: 768px) {
+      body.is-portal #kratos-blog-post,
+      body:has(.portal-wrapper) #kratos-blog-post {
+        padding-top: 55px !important;
+      }
+    }
   </style>
   
 <!-- hexo injector head_end start -->
@@ -71,6 +90,7 @@
 <!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head>
 
 
+    
     <body class="custom-background">
         <div id="kratos-wrapper">
     <div id="kratos-page">
@@ -84,26 +104,34 @@
                                     
                                     
                                         
-                                            <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+                                            <li><a href="/"><i class="fa fa-home"></i> 主页</a></li>
                                         
                                     
                                         
-                                            <li><a href="/archives/"><i class="fa fa-file"></i>档案馆</a></li>
+                                            <li><a href="/posts/"><i class="fa fa-book"></i> 文章</a></li>
                                         
                                     
                                         
-                                            <li><a href="/friends/"><i class="fa fa-paw"></i>是朋友们捏</a></li>
+                                            <li><a href="/archives/"><i class="fa fa-archive"></i> 档案馆</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/friends/"><i class="fa fa-users"></i> 友人录</a></li>
                                         
                                     
                                         
                                             <li>
-                                                <a><i class="fa fa-link"></i>快速TP</a>
+                                                <a><i class="fa fa-compass"></i> 传送门</a>
                                                 <ul class="sub-menu">
                                                     
                                                         
                                                     
                                                         
                                                             <li><a target="_blank" rel="noopener" href="https://github.com/Canyat">GitHub</a></li>
+                                                        
+                                                    
+                                                        
+                                                            <li><a target="_blank" rel="noopener" href="https://space.bilibili.com/20727607">Bilibili</a></li>
                                                         
                                                     
                                                 </ul>
@@ -139,11 +167,10 @@
             </div>
         </div>
 
-        <div id="kratos-blog-post">
+        <div id="kratos-blog-post" class="">
             <div class="container">
                 <div id="main" class="row">
                     
-
         
 
             <section class="col-md-8">
@@ -720,6 +747,59 @@
 
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
+<script>
+(function() {
+    function syncPortalLayout() {
+        var isPortal = !!document.querySelector('.portal-wrapper');
+        document.body.classList.toggle('is-portal', isPortal);
+        var hero = document.querySelector('.kratos-hero-2');
+        var blogPost = document.getElementById('kratos-blog-post');
+        if (hero) {
+            hero.style.display = isPortal ? 'none' : '';
+        }
+        if (blogPost) {
+            blogPost.classList.toggle('portal-page-container', isPortal);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', syncPortalLayout);
+    } else {
+        syncPortalLayout();
+    }
+
+    if (window.jQuery) {
+        window.jQuery(document).on('click', 'a', function() {
+            var href = window.jQuery(this).attr('href');
+            if (href === '/' || href === (window.kr && window.kr.siteRoot) || href === window.location.origin + '/') {
+                window.jQuery('body,html').stop(true);
+            }
+        });
+    }
+
+    window.addEventListener('pjax:complete', function() {
+        syncPortalLayout();
+        var isPortal = !!document.querySelector('.portal-wrapper');
+        if (isPortal) {
+            if (window.jQuery) {
+                window.jQuery('body,html').stop(true).scrollTop(0);
+            } else {
+                window.scrollTo(0, 0);
+            }
+        } else if (window.location.pathname.endsWith('/posts/') || window.location.pathname === '/posts') {
+            if (window.jQuery) {
+                window.jQuery('body,html').stop(true).scrollTop(0);
+            } else {
+                window.scrollTo(0, 0);
+            }
+        }
+    });
+
+    window.addEventListener('popstate', function() {
+        setTimeout(syncPortalLayout, 20);
+    });
+})();
+</script>
 
 
 

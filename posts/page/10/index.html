@@ -20,7 +20,7 @@
   <meta name="description" content="是小月月哦">
 <meta property="og:type" content="website">
 <meta property="og:title" content="梓骍先生">
-<meta property="og:url" content="http://example.com/page/9/index.html">
+<meta property="og:url" content="http://example.com/posts/page/10/index.html">
 <meta property="og:site_name" content="梓骍先生">
 <meta property="og:description" content="是小月月哦">
 <meta property="og:locale" content="en_US">
@@ -63,7 +63,26 @@
   
   <style>
     
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/banner.webp');
+      }
     
+    
+    /* Portal page standalone layout */
+    body.is-portal .kratos-hero-2,
+    body:has(.portal-wrapper) .kratos-hero-2 {
+      display: none !important;
+    }
+    body.is-portal #kratos-blog-post,
+    body:has(.portal-wrapper) #kratos-blog-post {
+      padding-top: 75px !important;
+    }
+    @media (max-width: 768px) {
+      body.is-portal #kratos-blog-post,
+      body:has(.portal-wrapper) #kratos-blog-post {
+        padding-top: 55px !important;
+      }
+    }
   </style>
   
 <!-- hexo injector head_end start -->
@@ -71,6 +90,7 @@
 <!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head>
 
 
+    
     <body class="custom-background">
         <div id="kratos-wrapper">
     <div id="kratos-page">
@@ -84,26 +104,34 @@
                                     
                                     
                                         
-                                            <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+                                            <li><a href="/"><i class="fa fa-home"></i> 主页</a></li>
                                         
                                     
                                         
-                                            <li><a href="/archives/"><i class="fa fa-file"></i>档案馆</a></li>
+                                            <li><a href="/posts/"><i class="fa fa-book"></i> 文章</a></li>
                                         
                                     
                                         
-                                            <li><a href="/friends/"><i class="fa fa-paw"></i>是朋友们捏</a></li>
+                                            <li><a href="/archives/"><i class="fa fa-archive"></i> 档案馆</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/friends/"><i class="fa fa-users"></i> 友人录</a></li>
                                         
                                     
                                         
                                             <li>
-                                                <a><i class="fa fa-link"></i>快速TP</a>
+                                                <a><i class="fa fa-compass"></i> 传送门</a>
                                                 <ul class="sub-menu">
                                                     
                                                         
                                                     
                                                         
                                                             <li><a target="_blank" rel="noopener" href="https://github.com/Canyat">GitHub</a></li>
+                                                        
+                                                    
+                                                        
+                                                            <li><a target="_blank" rel="noopener" href="https://space.bilibili.com/20727607">Bilibili</a></li>
                                                         
                                                     
                                                 </ul>
@@ -139,11 +167,10 @@
             </div>
         </div>
 
-        <div id="kratos-blog-post">
+        <div id="kratos-blog-post" class="">
             <div class="container">
                 <div id="main" class="row">
                     
-
         
 
             <section class="col-md-8">
@@ -161,7 +188,7 @@
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
-                    <a href="/2023/12/27/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/AgricultureExtensiology02/">
+                    <a href="/2023/07/25/%E5%B7%A5%E5%85%B7%E5%8C%BA/pythonmods/">
                         
                             <img class="kratos-entry-thumb-new-img" alt="">
                         
@@ -169,27 +196,27 @@
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/">农业推广学</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2023/12/27/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/AgricultureExtensiology02/" itemprop="mainEntityOfPage"><span itemprop="name headline">农业推广学基础框架梳理贰——沟通</span></a>
+                            <a class="label-link" href="/categories/%E5%B7%A5%E5%85%B7%E5%8C%BA/">工具区</a> <a class="label-link" href="/categories/%E5%B7%A5%E5%85%B7%E5%8C%BA/Python/">Python</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2023/07/25/%E5%B7%A5%E5%85%B7%E5%8C%BA/pythonmods/" itemprop="mainEntityOfPage"><span itemprop="name headline">挺常用的python小组件</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
                         <p itemProp="description">
                             
-                                沟通扩散的基础概念沟通的概念沟通是指一定社会环境下，人们利用共同的符号系统如语言、文字、图像、记号及身体语言等，以直接或间接的方式，交流和传递各自的观点、思想、知识、爱好、情感、愿望等各种信息的过程
-沟通过程及要素过程过程可以总结为：...
+                                观前提醒这些都是我个人在学习python的时候所自己写的小组件，所以代码难免会比较基础，或者说只是勉强能跑，所以请大家酌情使用，然后如果有更好的思路麻烦评论或者Email联系一下我qwq
+爬m3u8视频1234567891011121...
                             
                         </p>
                     </div>
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <time datetime="2023-12-27T09:49:41.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2023-12-27</a>
+                        <time datetime="2023-07-25T07:00:06.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2023-07-25</a>
                         </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/" rel="tag">农业推广学</a>, <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>
+                                <a class="tag-none-link" href="/tags/Python/" rel="tag">Python</a>, <a class="tag-none-link" href="/tags/%E5%B7%A5%E5%85%B7%E5%8C%BA/" rel="tag">工具区</a>
                             
                         </a>
                         
@@ -202,7 +229,7 @@
                         
                     </span>
                     <span class="pull-right">
-                        <a class="read-more" href="/2023/12/27/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/AgricultureExtensiology02/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                        <a class="read-more" href="/2023/07/25/%E5%B7%A5%E5%85%B7%E5%8C%BA/pythonmods/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
                     </span>
                 </footer>
             </div>
@@ -215,7 +242,7 @@
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
-                    <a href="/2023/12/25/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/AgricultureExtensiologyExercise/">
+                    <a href="/2023/06/17/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/Molecularbiology01/">
                         
                             <img class="kratos-entry-thumb-new-img" alt="">
                         
@@ -223,32 +250,28 @@
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/">农业推广学</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2023/12/25/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/AgricultureExtensiologyExercise/" itemprop="mainEntityOfPage"><span itemprop="name headline">农业推广学题目——舍友整理版</span></a>
+                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/">分子生物学</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2023/06/17/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/Molecularbiology01/" itemprop="mainEntityOfPage"><span itemprop="name headline">分子生物学应试教育梳理壹——名词解释</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
                         <p itemProp="description">
                             
-                                推广率推广度
-推广度：是指实际推广规模占应推广规模的百分比。
-
-推广率：是指已经推广的科技成果项数占成果总项数的百分比。
-
-
-科技成果物化类科技成果一般泛指借助或直接采用相关学科的技术工艺或途经，把基础性成果的科学知识赋予在一些有直接...
+                                基因有遗传效应的DNA片段，是生物体遗传的结构单位和功能单位
+基因组细胞或生物体中，一套完整的单倍体的遗传物质的总和
+开放读码框 ORF按一定阅读框，从起始密码到终止密码可连续解读遗传密码的区域#指DNA序列中可以被翻译成蛋白质序列的...
                             
                         </p>
                     </div>
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <time datetime="2023-12-25T15:16:05.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2023-12-25</a>
+                        <time datetime="2023-06-17T13:09:16.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2023-06-17</a>
                         </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/" rel="tag">农业推广学</a>, <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>
+                                <a class="tag-none-link" href="/tags/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/" rel="tag">分子生物学</a>, <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>
                             
                         </a>
                         
@@ -261,7 +284,7 @@
                         
                     </span>
                     <span class="pull-right">
-                        <a class="read-more" href="/2023/12/25/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/AgricultureExtensiologyExercise/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                        <a class="read-more" href="/2023/06/17/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/Molecularbiology01/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
                     </span>
                 </footer>
             </div>
@@ -274,7 +297,7 @@
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
-                    <a href="/2023/12/25/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/AgricultureExtensiology01/">
+                    <a href="/2023/06/15/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer12/">
                         
                             <img class="kratos-entry-thumb-new-img" alt="">
                         
@@ -282,31 +305,30 @@
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/">农业推广学</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2023/12/25/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/AgricultureExtensiology01/" itemprop="mainEntityOfPage"><span itemprop="name headline">农业推广学基础框架梳理壹——推广、行为</span></a>
+                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/">土壤肥料学</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2023/06/15/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer12/" itemprop="mainEntityOfPage"><span itemprop="name headline">土壤肥料学基础梳理拾贰——肥料</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
                         <p itemProp="description">
                             
-                                农业推广概念指将农业的研究成果作为知识，将其通俗化从而转化推广给普通民众，从而促进农业的发展
-四大要素沟通主体# 个人理解就是对象，给谁做推广
-客体# 推广时候使用的资料
-渠道# 路径&#x2F;方法
-媒介# 传媒
-农业创新扩散原理&...
+                                复合肥料：同时含有N,P,K肥料三要素中的两种或三种营养元素的化学肥料
+有机肥料：指来源于植物或动物残体，提供植物养分并兼有改善土壤理化和生物学性质的有机物料。
+一、肥料混合的原则是什么？
+
+混合肥料的临界相对湿度要高；混合后肥料的养...
                             
                         </p>
                     </div>
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <time datetime="2023-12-25T11:16:05.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2023-12-25</a>
+                        <time datetime="2023-06-14T16:01:37.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2023-06-15</a>
                         </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/" rel="tag">农业推广学</a>, <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>
+                                <a class="tag-none-link" href="/tags/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/" rel="tag">土壤肥料学</a>, <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>
                             
                         </a>
                         
@@ -319,7 +341,7 @@
                         
                     </span>
                     <span class="pull-right">
-                        <a class="read-more" href="/2023/12/25/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/AgricultureExtensiology01/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                        <a class="read-more" href="/2023/06/15/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer12/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
                     </span>
                 </footer>
             </div>
@@ -332,7 +354,7 @@
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
-                    <a href="/2023/12/18/%E5%B7%A5%E5%85%B7%E5%8C%BA/HowToUseGPTKey/">
+                    <a href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer11/">
                         
                             <img class="kratos-entry-thumb-new-img" alt="">
                         
@@ -340,27 +362,32 @@
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%B7%A5%E5%85%B7%E5%8C%BA/">工具区</a> <a class="label-link" href="/categories/%E5%B7%A5%E5%85%B7%E5%8C%BA/ChatGPT/">ChatGPT</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2023/12/18/%E5%B7%A5%E5%85%B7%E5%8C%BA/HowToUseGPTKey/" itemprop="mainEntityOfPage"><span itemprop="name headline">猴子都能看懂的GPT网站使用指南</span></a>
+                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/">土壤肥料学</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer11/" itemprop="mainEntityOfPage"><span itemprop="name headline">土壤肥料学基础梳理拾壹——微量元素</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
                         <p itemProp="description">
                             
-                                0 写在开头事情是这样的，前些天我搭建了一个gpt的网站，用的是github上面的一个项目申请的免费共享key。
-恰恰是因为这玩意儿是免费的，所以存在使用次数限制，分享给很多人一起使用估计没用两下就受限了。而且由于配置比较麻烦，使用的...
+                                微量元素铁（Fe），硼（B），锌（Zn）的主要营养功能及植物缺乏时的主要症状B的生理功能：
+
+促进碳水化合物的合成运输
+促进生殖器官的正常发育
+促进植物分生组织细胞分化正常
+提高豆科作物根瘤的固氮活性B缺乏：
+植物矮小，有时只开花不结...
                             
                         </p>
                     </div>
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <time datetime="2023-12-18T14:21:47.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2023-12-18</a>
+                        <time datetime="2023-06-14T15:48:42.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2023-06-14</a>
                         </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/ChatGPT/" rel="tag">ChatGPT</a>, <a class="tag-none-link" href="/tags/%E5%B7%A5%E5%85%B7%E5%8C%BA/" rel="tag">工具区</a>
+                                <a class="tag-none-link" href="/tags/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/" rel="tag">土壤肥料学</a>, <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>
                             
                         </a>
                         
@@ -373,7 +400,7 @@
                         
                     </span>
                     <span class="pull-right">
-                        <a class="read-more" href="/2023/12/18/%E5%B7%A5%E5%85%B7%E5%8C%BA/HowToUseGPTKey/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                        <a class="read-more" href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer11/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
                     </span>
                 </footer>
             </div>
@@ -386,7 +413,7 @@
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
-                    <a href="/2023/12/09/%E6%96%87%E7%AB%A0%E5%8C%BA/PostItSomeoneWillLike/">
+                    <a href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer10/">
                         
                             <img class="kratos-entry-thumb-new-img" alt="">
                         
@@ -394,27 +421,37 @@
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E6%96%87%E7%AB%A0%E5%8C%BA/">文章区</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2023/12/09/%E6%96%87%E7%AB%A0%E5%8C%BA/PostItSomeoneWillLike/" itemprop="mainEntityOfPage"><span itemprop="name headline">散文 | 发条朋友圈吧，总会有人给你点赞</span></a>
+                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/">土壤肥料学</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer10/" itemprop="mainEntityOfPage"><span itemprop="name headline">土壤肥料学基础梳理拾——钾</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
                         <p itemProp="description">
                             
-                                1
-前两天看到了一部高分电影《荒野生存》，主角在饱受孤独后，于生命的尽头用力写下了一句话：Happiness is real only when shared.（真正的幸福源于分享过后）这让我想起这些年来，总能从我的各个朋友口中听到的...
+                                土壤中钾的形态
+矿物态钾
+
+
+矿物态钾是指主要以原生或次生的结晶硅酸盐状态存在于土壤中的钾
+
+
+非交换态
+
+
+非交换态钾又称缓效钾，主要指被2:1型层状粘土矿物所固定的钾离子以及黑云母和部分水云母中的钾，它是反映土壤钾潜力的主要指标
+...
                             
                         </p>
                     </div>
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <time datetime="2023-12-08T23:25:27.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2023-12-09</a>
+                        <time datetime="2023-06-14T15:34:24.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2023-06-14</a>
                         </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E6%95%A3%E6%96%87/" rel="tag">散文</a>, <a class="tag-none-link" href="/tags/%E6%96%87%E7%AB%A0%E5%8C%BA/" rel="tag">文章区</a>
+                                <a class="tag-none-link" href="/tags/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/" rel="tag">土壤肥料学</a>, <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>
                             
                         </a>
                         
@@ -427,7 +464,7 @@
                         
                     </span>
                     <span class="pull-right">
-                        <a class="read-more" href="/2023/12/09/%E6%96%87%E7%AB%A0%E5%8C%BA/PostItSomeoneWillLike/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                        <a class="read-more" href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer10/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
                     </span>
                 </footer>
             </div>
@@ -440,7 +477,7 @@
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
-                    <a href="/2023/11/26/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E8%82%B2%E7%A7%8D%E5%AD%A6/BreedingScience02/">
+                    <a href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer09/">
                         
                             <img class="kratos-entry-thumb-new-img" alt="">
                         
@@ -448,33 +485,39 @@
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E4%BD%9C%E7%89%A9%E8%82%B2%E7%A7%8D%E5%AD%A6/">作物育种学</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2023/11/26/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E8%82%B2%E7%A7%8D%E5%AD%A6/BreedingScience02/" itemprop="mainEntityOfPage"><span itemprop="name headline">作物育种学知识梳理贰——框架重点</span></a>
+                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/">土壤肥料学</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer09/" itemprop="mainEntityOfPage"><span itemprop="name headline">土壤肥料学基础梳理玖——磷</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
                         <p itemProp="description">
                             
-                                作物育种学概念作物育种学是研究选育和繁育作物优良品种的理论和技术的科学
-作物育种学的任务
-研究育种规律；
-培育新品种，实现品种良种化；
-繁育良种，实现种子标准化。
+                                无机磷素形态的分级
+水溶态磷：H2PO4-、HPO42-、PO43-
+吸附态磷：静电吸附和专性吸附
+矿物态磷：
 
-作物育种学的主要成就
-目标性状的要求提高#高产、多抗、耐性、品质及适...
+
+铝结合态磷（Al-P）
+铁结合态磷（Fe-P）
+磷酸钙盐(Ca-P)
+
+
+包被态或闭蓄态磷(O-P)
+
+#行了，知道闭...
                             
                         </p>
                     </div>
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <time datetime="2023-11-26T04:29:32.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2023-11-26</a>
+                        <time datetime="2023-06-14T15:15:19.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2023-06-14</a>
                         </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E4%BD%9C%E7%89%A9%E8%82%B2%E7%A7%8D%E5%AD%A6/" rel="tag">作物育种学</a>, <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>
+                                <a class="tag-none-link" href="/tags/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/" rel="tag">土壤肥料学</a>, <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>
                             
                         </a>
                         
@@ -487,7 +530,7 @@
                         
                     </span>
                     <span class="pull-right">
-                        <a class="read-more" href="/2023/11/26/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E8%82%B2%E7%A7%8D%E5%AD%A6/BreedingScience02/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                        <a class="read-more" href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer09/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
                     </span>
                 </footer>
             </div>
@@ -500,7 +543,7 @@
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
-                    <a href="/2023/11/24/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E8%82%B2%E7%A7%8D%E5%AD%A6/BreedingScience01/">
+                    <a href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer08/">
                         
                             <img class="kratos-entry-thumb-new-img" alt="">
                         
@@ -508,29 +551,32 @@
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E4%BD%9C%E7%89%A9%E8%82%B2%E7%A7%8D%E5%AD%A6/">作物育种学</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2023/11/24/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E8%82%B2%E7%A7%8D%E5%AD%A6/BreedingScience01/" itemprop="mainEntityOfPage"><span itemprop="name headline">作物育种学知识梳理壹——杂交育种（方法）</span></a>
+                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/">土壤肥料学</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer08/" itemprop="mainEntityOfPage"><span itemprop="name headline">土壤肥料学基础梳理捌——氮</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
                         <p itemProp="description">
                             
-                                我放第一个整理肯定是因为这个很重要啦🤣
-基础概念杂交育种是通过品种间杂交创造新变异，从中选育新品种的方法
-特点一、变异丰富基因重组P   感病早熟 × 抗病迟熟F1  早熟抗病
-基因互作就是不同显性基因互作或互补产生新性状P   C...
+                                植物对氮的吸收与同化吸收的形态
+
+无机态：NH4+-N、NO3–N（主要）
+有机态：NH2-N、氨基酸、核酸等（少量）
+
+植物吸收的氮素主要是铵态氮和硝态氮
+只要在环境中为铵态氮和硝态氮创造出各自所需要的最适条件，它们在生理上是具有同...
                             
                         </p>
                     </div>
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <time datetime="2023-11-24T05:48:10.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2023-11-24</a>
+                        <time datetime="2023-06-14T14:28:31.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2023-06-14</a>
                         </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E4%BD%9C%E7%89%A9%E8%82%B2%E7%A7%8D%E5%AD%A6/" rel="tag">作物育种学</a>, <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>
+                                <a class="tag-none-link" href="/tags/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/" rel="tag">土壤肥料学</a>, <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>
                             
                         </a>
                         
@@ -543,7 +589,7 @@
                         
                     </span>
                     <span class="pull-right">
-                        <a class="read-more" href="/2023/11/24/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E8%82%B2%E7%A7%8D%E5%AD%A6/BreedingScience01/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                        <a class="read-more" href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer08/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
                     </span>
                 </footer>
             </div>
@@ -556,7 +602,7 @@
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
-                    <a href="/2023/11/23/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%A0%BD%E5%9F%B9%E5%AD%A6/Cultivate1Combining02/">
+                    <a href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer07/">
                         
                             <img class="kratos-entry-thumb-new-img" alt="">
                         
@@ -564,27 +610,43 @@
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E4%BD%9C%E7%89%A9%E6%A0%BD%E5%9F%B9%E5%AD%A6/">作物栽培学</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2023/11/23/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%A0%BD%E5%9F%B9%E5%AD%A6/Cultivate1Combining02/" itemprop="mainEntityOfPage"><span itemprop="name headline">作物栽培学知识梳理贰——问答</span></a>
+                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/">土壤肥料学</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer07/" itemprop="mainEntityOfPage"><span itemprop="name headline">土壤肥料学基础梳理柒——植物营养与施肥原理</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
                         <p itemProp="description">
                             
-                                一、作物栽培学概念及特点作物栽培学是研究作物生长、产量和品质的形成规律与外界环境条件之间的关系，通过探讨栽培管理、生长调控和优化决策等来实现作物的高产、优质、高效、安全和可持续性发展的理论的理论方法与技术的科学
-二、栽培作物和野生植物...
+                                必需元素判定标准
+
+必要性
+
+
+该元素为所有植物所必需，缺少则植物不能完成其生活周期
+
+
+不可替代性
+
+
+缺少该元素，植物出现专一的缺素症状，只有补充该元素，才能缓解或消除症状，其它任何元素都不能替代
+
+
+直接性
+
+
+该元素直接参与植...
                             
                         </p>
                     </div>
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <time datetime="2023-11-22T16:06:06.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2023-11-23</a>
+                        <time datetime="2023-06-14T11:26:22.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2023-06-14</a>
                         </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E4%BD%9C%E7%89%A9%E6%A0%BD%E5%9F%B9%E5%AD%A6/" rel="tag">作物栽培学</a>, <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>
+                                <a class="tag-none-link" href="/tags/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/" rel="tag">土壤肥料学</a>, <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>
                             
                         </a>
                         
@@ -597,7 +659,7 @@
                         
                     </span>
                     <span class="pull-right">
-                        <a class="read-more" href="/2023/11/23/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%A0%BD%E5%9F%B9%E5%AD%A6/Cultivate1Combining02/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                        <a class="read-more" href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer07/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
                     </span>
                 </footer>
             </div>
@@ -610,7 +672,7 @@
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
-                    <a href="/2023/11/07/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%A0%BD%E5%9F%B9%E5%AD%A6/Cultivate1Combining01/">
+                    <a href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer06/">
                         
                             <img class="kratos-entry-thumb-new-img" alt="">
                         
@@ -618,28 +680,33 @@
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E4%BD%9C%E7%89%A9%E6%A0%BD%E5%9F%B9%E5%AD%A6/">作物栽培学</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2023/11/07/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%A0%BD%E5%9F%B9%E5%AD%A6/Cultivate1Combining01/" itemprop="mainEntityOfPage"><span itemprop="name headline">作物栽培学知识梳理壹——重点框架</span></a>
+                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/">土壤肥料学</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer06/" itemprop="mainEntityOfPage"><span itemprop="name headline">土壤肥料学基础梳理陆——土壤胶体&吸收性能</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
                         <p itemProp="description">
                             
-                                作物栽培学的概念研究作物生长发育和产量、品质形成规律极其与环境的关系，进而采取栽培措施使各生产要素合理组合，以达到作物生产优质、高产、高效、安全、生态的目的
-作物栽培学的任务包括作物、环境和措施三个环节
-农业八字宪法土 肥 水 种 密...
+                                土壤胶体土壤胶体一般指土壤粘粒，其粒径在1-2微米之间（1000-2000毫微米）。比一般规定的胶体粒级大10-20倍。
+土壤胶体可以分成三大类：
+
+无机胶体（主要指粘土矿物）
+有机胶体（主要指腐殖质）
+有机–无机复合胶体
+
+土壤无机...
                             
                         </p>
                     </div>
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <time datetime="2023-11-07T14:26:06.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2023-11-07</a>
+                        <time datetime="2023-06-14T06:47:50.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2023-06-14</a>
                         </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E4%BD%9C%E7%89%A9%E6%A0%BD%E5%9F%B9%E5%AD%A6/" rel="tag">作物栽培学</a>, <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>
+                                <a class="tag-none-link" href="/tags/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/" rel="tag">土壤肥料学</a>, <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>
                             
                         </a>
                         
@@ -652,7 +719,7 @@
                         
                     </span>
                     <span class="pull-right">
-                        <a class="read-more" href="/2023/11/07/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%A0%BD%E5%9F%B9%E5%AD%A6/Cultivate1Combining01/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                        <a class="read-more" href="/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer06/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
                     </span>
                 </footer>
             </div>
@@ -665,7 +732,7 @@
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
-                    <a href="/2023/08/04/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E9%A9%BE%E8%80%83/DrivingLicense01/">
+                    <a href="/2023/06/12/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer05/">
                         
                             <img class="kratos-entry-thumb-new-img" alt="">
                         
@@ -673,26 +740,30 @@
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E9%A9%BE%E7%85%A7%E8%80%83%E8%AF%95/">驾照考试</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2023/08/04/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E9%A9%BE%E8%80%83/DrivingLicense01/" itemprop="mainEntityOfPage"><span itemprop="name headline">科目一驾照备考技巧知识笔记-壹</span></a>
+                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/">土壤肥料学</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2023/06/12/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer05/" itemprop="mainEntityOfPage"><span itemprop="name headline">土壤肥料学基础梳理伍——土壤的孔性、结构性与耕性</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
                         <p itemProp="description">
                             
-                                因为文章涉及版权问题，请输入密码查看哦，密码请主动联系站主获取qwq
+                                孔隙土壤密度是指单位容积的固体土粒（不包括粒间孔隙）的干重，单位g&#x2F;cm3或t&#x2F;m3。
+土壤容重是指单位容积土壤体（包括粒间空隙）的烘干重，单位为g&#x2F;cm3或t&#x2F;m3。
+计算
+
+土壤孔隙度土壤孔...
                             
                         </p>
                     </div>
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <time datetime="2023-08-04T10:05:15.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2023-08-04</a>
+                        <time datetime="2023-06-12T14:34:26.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2023-06-12</a>
                         </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>, <a class="tag-none-link" href="/tags/%E9%A9%BE%E7%85%A7%E8%80%83%E8%AF%95/" rel="tag">驾照考试</a>
+                                <a class="tag-none-link" href="/tags/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/" rel="tag">土壤肥料学</a>, <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>
                             
                         </a>
                         
@@ -705,7 +776,7 @@
                         
                     </span>
                     <span class="pull-right">
-                        <a class="read-more" href="/2023/08/04/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E9%A9%BE%E8%80%83/DrivingLicense01/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                        <a class="read-more" href="/2023/06/12/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer05/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
                     </span>
                 </footer>
             </div>
@@ -715,7 +786,7 @@
 
 
     <div class='text-center pagination'>
-    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/10/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/posts/page/9/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/posts/">1</a><span class="space">&hellip;</span><a class="page-number" href="/posts/page/8/">8</a><a class="page-number" href="/posts/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/posts/page/11/">11</a><a class="page-number" href="/posts/page/12/">12</a><a class="page-number" href="/posts/page/13/">13</a><a class="extend next" rel="next" href="/posts/page/11/"><i class="fa fa-angle-right"></i></a>
     </div>
 
 
@@ -1190,6 +1261,59 @@
 
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
+<script>
+(function() {
+    function syncPortalLayout() {
+        var isPortal = !!document.querySelector('.portal-wrapper');
+        document.body.classList.toggle('is-portal', isPortal);
+        var hero = document.querySelector('.kratos-hero-2');
+        var blogPost = document.getElementById('kratos-blog-post');
+        if (hero) {
+            hero.style.display = isPortal ? 'none' : '';
+        }
+        if (blogPost) {
+            blogPost.classList.toggle('portal-page-container', isPortal);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', syncPortalLayout);
+    } else {
+        syncPortalLayout();
+    }
+
+    if (window.jQuery) {
+        window.jQuery(document).on('click', 'a', function() {
+            var href = window.jQuery(this).attr('href');
+            if (href === '/' || href === (window.kr && window.kr.siteRoot) || href === window.location.origin + '/') {
+                window.jQuery('body,html').stop(true);
+            }
+        });
+    }
+
+    window.addEventListener('pjax:complete', function() {
+        syncPortalLayout();
+        var isPortal = !!document.querySelector('.portal-wrapper');
+        if (isPortal) {
+            if (window.jQuery) {
+                window.jQuery('body,html').stop(true).scrollTop(0);
+            } else {
+                window.scrollTo(0, 0);
+            }
+        } else if (window.location.pathname.endsWith('/posts/') || window.location.pathname === '/posts') {
+            if (window.jQuery) {
+                window.jQuery('body,html').stop(true).scrollTop(0);
+            } else {
+                window.scrollTo(0, 0);
+            }
+        }
+    });
+
+    window.addEventListener('popstate', function() {
+        setTimeout(syncPortalLayout, 20);
+    });
+})();
+</script>
 
 
 

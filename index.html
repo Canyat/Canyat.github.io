@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="../images/logo/moon.png">
   
-  <title>梓骍先生</title>
+  <title>首页 | 梓骍先生</title>
   
   <meta name="author" content="梓骍先生" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -19,12 +19,14 @@
   
   <meta name="description" content="是小月月哦">
 <meta property="og:type" content="website">
-<meta property="og:title" content="梓骍先生">
+<meta property="og:title" content="首页">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="梓骍先生">
 <meta property="og:description" content="是小月月哦">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/logo/moon.png">
+<meta property="article:published_time" content="2026-09-05T09:31:22.405Z">
+<meta property="article:modified_time" content="2026-09-05T09:31:22.405Z">
 <meta property="article:author" content="梓骍先生">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/logo/moon.png">
@@ -63,7 +65,26 @@
   
   <style>
     
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/banner.webp');
+      }
     
+    
+    /* Portal page standalone layout */
+    body.is-portal .kratos-hero-2,
+    body:has(.portal-wrapper) .kratos-hero-2 {
+      display: none !important;
+    }
+    body.is-portal #kratos-blog-post,
+    body:has(.portal-wrapper) #kratos-blog-post {
+      padding-top: 75px !important;
+    }
+    @media (max-width: 768px) {
+      body.is-portal #kratos-blog-post,
+      body:has(.portal-wrapper) #kratos-blog-post {
+        padding-top: 55px !important;
+      }
+    }
   </style>
   
 <!-- hexo injector head_end start -->
@@ -71,7 +92,8 @@
 <!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head>
 
 
-    <body class="custom-background">
+    
+    <body class="custom-background is-portal">
         <div id="kratos-wrapper">
     <div id="kratos-page">
         <div id="kratos-header">
@@ -84,26 +106,34 @@
                                     
                                     
                                         
-                                            <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+                                            <li><a href="/"><i class="fa fa-home"></i> 主页</a></li>
                                         
                                     
                                         
-                                            <li><a href="/archives/"><i class="fa fa-file"></i>档案馆</a></li>
+                                            <li><a href="/posts/"><i class="fa fa-book"></i> 文章</a></li>
                                         
                                     
                                         
-                                            <li><a href="/friends/"><i class="fa fa-paw"></i>是朋友们捏</a></li>
+                                            <li><a href="/archives/"><i class="fa fa-archive"></i> 档案馆</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/friends/"><i class="fa fa-users"></i> 友人录</a></li>
                                         
                                     
                                         
                                             <li>
-                                                <a><i class="fa fa-link"></i>快速TP</a>
+                                                <a><i class="fa fa-compass"></i> 传送门</a>
                                                 <ul class="sub-menu">
                                                     
                                                         
                                                     
                                                         
                                                             <li><a target="_blank" rel="noopener" href="https://github.com/Canyat">GitHub</a></li>
+                                                        
+                                                    
+                                                        
+                                                            <li><a target="_blank" rel="noopener" href="https://space.bilibili.com/20727607">Bilibili</a></li>
                                                         
                                                     
                                                 </ul>
@@ -139,677 +169,723 @@
             </div>
         </div>
 
-        <div id="kratos-blog-post">
+        <div id="kratos-blog-post" class="portal-page-container">
             <div class="container">
                 <div id="main" class="row">
                     
+        
+
+            <section class="col-md-12 col-xs-12 portal-wrapper">
 
         
 
-            <section class="col-md-8">
+            <style>
+/* ==========================================================================
+   Portal Page Styling - Chinese Ink-Wash Aesthetic (Zero Emojis)
+   ========================================================================== */
 
-        
+body.is-portal #kratos-blog-post,
+body:has(.portal-wrapper) #kratos-blog-post,
+.portal-page-container {
+    padding-top: 75px !important;
+    padding-bottom: 40px;
+}
 
-            <!-- Breadcrumb for tag & category page -->
+@media (max-width: 768px) {
+    body.is-portal #kratos-blog-post,
+    body:has(.portal-wrapper) #kratos-blog-post,
+    .portal-page-container {
+        padding-top: 55px !important;
+    }
+}
+
+.portal-container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 主门扉卡片 */
+.portal-card {
+    background: hsla(42, 71%, 97%, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid hsla(40, 18%, 74%, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 10px 32px rgba(60, 50, 40, 0.08);
+    padding: 50px 42px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+/* 头部形象区 */
+.portal-hero {
+    text-align: center;
+    padding-bottom: 38px;
+    border-bottom: 1px solid hsla(40, 18%, 74%, 0.35);
+    margin-bottom: 38px;
+}
+
+.portal-avatar-wrap {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 22px;
+}
+
+.portal-avatar {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fdfaf3;
+    box-shadow: 0 0 0 4px hsla(42, 71%, 97%, 0.8), 0 8px 24px rgba(60, 50, 40, 0.16);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.portal-avatar:hover {
+    transform: scale(1.05) rotate(1.5deg);
+    box-shadow: 0 0 0 4px rgba(156, 42, 42, 0.2), 0 12px 30px rgba(156, 42, 42, 0.22);
+}
+
+.portal-title {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #1a1a1a;
+    margin: 0 0 10px 0;
+    font-family: "Noto Serif SC", STKaiti, KaiTi, STSong, SimSun, serif;
+    text-align: center;
+}
+
+.portal-motto {
+    font-size: 19px;
+    color: #4a4238;
+    margin: 14px 0 22px 0;
+    font-family: "Noto Serif SC", STKaiti, KaiTi, STSong, SimSun, serif;
+    letter-spacing: 2px;
+}
 
 
+/* 核心行动按钮 (CTAs) */
+.portal-cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.btn-portal-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #9c2a2a 0%, #7d1f1f 100%);
+    color: #ffffff !important;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 12px 28px;
+    border-radius: 28px;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(156, 42, 42, 0.28);
+    transition: all 0.3s ease;
+    font-family: "Noto Serif SC", STKaiti, KaiTi, serif;
+}
+
+.btn-portal-primary:hover {
+    background: linear-gradient(135deg, #b03232 0%, #8f2626 100%);
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(156, 42, 42, 0.38);
+}
+
+.btn-portal-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: hsla(43, 51%, 92%, 0.8);
+    color: #3d342c !important;
+    border: 1px solid hsla(40, 18%, 74%, 0.5);
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    border-radius: 28px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: "Noto Serif SC", STKaiti, KaiTi, serif;
+}
+
+.btn-portal-secondary:hover {
+    background: hsla(40, 34%, 86%, 0.8);
+    border-color: #9c2a2a;
+    color: #9c2a2a !important;
+    transform: translateY(-2px);
+}
+
+/* 板块通用标题 */
+.portal-section-title {
+    font-size: 21px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 24px 0;
+    padding-left: 12px;
+    border-left: 4px solid #9c2a2a;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Noto Serif SC", STKaiti, KaiTi, STSong, SimSun, serif;
+    letter-spacing: 1px;
+}
+
+.portal-section-title i {
+    color: #9c2a2a;
+    font-size: 18px;
+}
+
+/* 核心内容领域卡片网格 (3列) */
+.domain-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 42px;
+}
+
+.domain-card {
+    background: hsla(43, 51%, 92%, 0.87);
+    border: 1px solid hsla(40, 18%, 74%, 0.4);
+    border-radius: 12px;
+    padding: 24px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 12px rgba(60, 50, 40, 0.04);
+}
+
+.domain-card:hover {
+    border-color: rgba(156, 42, 42, 0.45);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(60, 50, 40, 0.08);
+}
+
+.domain-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
+.domain-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: rgba(156, 42, 42, 0.08);
+    color: #9c2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    flex-shrink: 0;
+}
+
+.domain-title-wrap h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #1a1a1a;
+    font-family: "Noto Serif SC", STKaiti, KaiTi, serif;
+}
+
+.domain-subtitle {
+    font-size: 12px;
+    color: #6b6258;
+    margin-top: 3px;
+}
+
+.domain-desc {
+    font-size: 13.5px;
+    line-height: 1.68;
+    color: #4a4238;
+    margin: 0 0 16px 0;
+}
+
+.domain-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+    border-top: 1px dashed hsla(40, 18%, 74%, 0.4);
+}
+
+.domain-count-tag {
+    font-size: 12px;
+    color: #6b6258;
+    background: hsla(40, 34%, 86%, 0.6);
+    border: 1px solid hsla(40, 18%, 74%, 0.25);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.domain-link {
+    font-size: 13px;
+    font-weight: 500;
+    color: #9c2a2a;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: gap 0.2s ease;
+    font-family: "Noto Serif SC", STKaiti, KaiTi, serif;
+}
+
+.domain-link:hover {
+    color: #c44040;
+    gap: 8px;
+}
 
 
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                    <div class="pin-top wrapper">
-                        <div class="pin-top inner"></div>
-                    </div>
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2023/03/22/AAAAHearder/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%8D%95%E7%8B%AC%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5%E5%88%86%E5%8C%BA/">这是一个单独的碎碎念分区</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2023/03/22/AAAAHearder/" itemprop="mainEntityOfPage"><span itemprop="name headline">是一个食用指南喵~</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                〇、注意事项文章中的图片用的是github的图床，如果文章中的图片不显示，请配合梯子&#x2F;Watt Toolkit加速器(免费)使用。
-一、基础概况1.1 文章分类我简单地对我的文章的tag做了一些系统性的分类，主要包含一下几点...
-                            
+/* 底部数据概览 */
+.stats-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    background: hsla(40, 34%, 86%, 0.4);
+    border: 1px solid hsla(40, 18%, 74%, 0.3);
+    border-radius: 10px;
+    padding: 20px 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.stat-item-num {
+    font-size: 22px;
+    font-weight: 700;
+    color: #9c2a2a;
+    margin-bottom: 4px;
+    font-family: Consolas, Monaco, "Courier New", monospace;
+}
+
+.stat-item-label {
+    font-size: 12px;
+    color: #6b6258;
+    font-family: "Noto Serif SC", STSong, SimSun, serif;
+}
+
+/* 站长心声与碎碎念板块 */
+.portal-thoughts-section {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.portal-thoughts-card {
+    background: hsla(43, 51%, 92%, 0.7);
+    border: 1px solid hsla(40, 18%, 74%, 0.4);
+    border-left: 4px solid #9c2a2a;
+    border-radius: 10px;
+    padding: 22px 26px;
+    box-shadow: 0 3px 12px rgba(60, 50, 40, 0.04);
+}
+
+.portal-thoughts-card p {
+    font-family: "Noto Serif SC", STSong, KaiTi, serif;
+    font-size: 14.5px;
+    line-height: 1.88;
+    color: #4a4238;
+    margin: 0 0 12px 0;
+    text-indent: 2em;
+    letter-spacing: 0.5px;
+}
+
+.portal-thoughts-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* 社交渠道栏 */
+.social-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding-top: 10px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: hsla(40, 34%, 86%, 0.6);
+    border: 1px solid hsla(40, 18%, 74%, 0.3);
+    color: #4a4238;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.social-link:hover {
+    background: #9c2a2a;
+    border-color: #9c2a2a;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(156, 42, 42, 0.25);
+}
+
+/* ==========================================================================
+   深色模式支持 (Dark Ink / Sepia Theme Adaptations)
+   ========================================================================== */
+
+html[data-theme="dark"] .portal-card,
+body.dark .portal-card {
+    background: rgba(42, 37, 32, 0.88);
+    border-color: rgba(90, 80, 64, 0.5);
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.4);
+}
+
+html[data-theme="dark"] .portal-title,
+body.dark .portal-title {
+    color: #e8e0d0;
+}
+
+html[data-theme="dark"] .portal-motto,
+body.dark .portal-motto {
+    color: #c8c0b0;
+}
+
+html[data-theme="dark"] .portal-hero,
+body.dark .portal-hero {
+    border-bottom-color: rgba(90, 80, 64, 0.5);
+}
+
+html[data-theme="dark"] .portal-avatar,
+body.dark .portal-avatar {
+    border-color: #332e25;
+    box-shadow: 0 0 0 4px rgba(51, 46, 37, 0.7), 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+html[data-theme="dark"] .btn-portal-primary,
+body.dark .btn-portal-primary {
+    background: linear-gradient(135deg, #a83535 0%, #822424 100%);
+    box-shadow: 0 6px 18px rgba(168, 53, 53, 0.35);
+}
+
+html[data-theme="dark"] .btn-portal-primary:hover,
+body.dark .btn-portal-primary:hover {
+    background: linear-gradient(135deg, #bd4141 0%, #942b2b 100%);
+    box-shadow: 0 8px 24px rgba(168, 53, 53, 0.45);
+}
+
+html[data-theme="dark"] .btn-portal-secondary,
+body.dark .btn-portal-secondary {
+    background: rgba(51, 46, 37, 0.75);
+    border-color: rgba(90, 80, 64, 0.6);
+    color: #e8e0d0 !important;
+}
+
+html[data-theme="dark"] .btn-portal-secondary:hover,
+body.dark .btn-portal-secondary:hover {
+    background: rgba(65, 59, 47, 0.85);
+    border-color: #c45050;
+    color: #c45050 !important;
+}
+
+html[data-theme="dark"] .portal-section-title,
+body.dark .portal-section-title {
+    color: #e8e0d0;
+    border-left-color: #c45050;
+}
+
+html[data-theme="dark"] .portal-section-title i,
+body.dark .portal-section-title i {
+    color: #c45050;
+}
+
+html[data-theme="dark"] .domain-card,
+body.dark .domain-card {
+    background: rgba(37, 34, 32, 0.86);
+    border-color: rgba(90, 80, 64, 0.5);
+}
+
+html[data-theme="dark"] .domain-card:hover,
+body.dark .domain-card:hover {
+    border-color: rgba(196, 80, 80, 0.6);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .domain-icon-box,
+body.dark .domain-icon-box {
+    background: rgba(196, 80, 80, 0.15);
+    color: #d96868;
+}
+
+html[data-theme="dark"] .domain-title-wrap h3,
+body.dark .domain-title-wrap h3 {
+    color: #e8e0d0;
+}
+
+html[data-theme="dark"] .domain-subtitle,
+body.dark .domain-subtitle {
+    color: #9c9484;
+}
+
+html[data-theme="dark"] .domain-desc,
+body.dark .domain-desc {
+    color: #b8b0a0;
+}
+
+html[data-theme="dark"] .domain-footer,
+body.dark .domain-footer {
+    border-top-color: rgba(90, 80, 64, 0.5);
+}
+
+html[data-theme="dark"] .domain-count-tag,
+body.dark .domain-count-tag {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(90, 80, 64, 0.4);
+    color: #b8b0a0;
+}
+
+html[data-theme="dark"] .domain-link,
+body.dark .domain-link {
+    color: #d96868;
+}
+
+html[data-theme="dark"] .domain-link:hover,
+body.dark .domain-link:hover {
+    color: #e27d7d;
+}
+
+
+html[data-theme="dark"] .stats-bar,
+body.dark .stats-bar {
+    background: rgba(37, 34, 32, 0.6);
+    border-color: rgba(90, 80, 64, 0.4);
+}
+
+html[data-theme="dark"] .stat-item-num,
+body.dark .stat-item-num {
+    color: #d96868;
+}
+
+html[data-theme="dark"] .stat-item-label,
+body.dark .stat-item-label {
+    color: #9c9484;
+}
+
+html[data-theme="dark"] .portal-thoughts-card,
+body.dark .portal-thoughts-card {
+    background: rgba(37, 34, 32, 0.6);
+    border-color: rgba(90, 80, 64, 0.4);
+    border-left-color: #c45c5c;
+}
+
+html[data-theme="dark"] .portal-thoughts-card p,
+body.dark .portal-thoughts-card p {
+    color: #b8b0a0;
+}
+
+html[data-theme="dark"] .social-link,
+body.dark .social-link {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(90, 80, 64, 0.4);
+    color: #b8b0a0;
+}
+
+html[data-theme="dark"] .social-link:hover,
+body.dark .social-link:hover {
+    background: #c45050;
+    border-color: #c45050;
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   响应式调整 (Mobile Responsiveness)
+   ========================================================================== */
+
+@media (max-width: 991px) {
+    .domain-grid {
+        grid-template-columns: 1fr;
+    }
+    .portal-card {
+        padding: 36px 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    .portal-title {
+        font-size: 26px;
+    }
+    .portal-motto {
+        font-size: 16px;
+    }
+    .portal-cta-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .btn-portal-primary,
+    .btn-portal-secondary {
+        justify-content: center;
+    }
+}
+</style>
+
+<div class="portal-container">
+    <div class="portal-card">
+        <!-- 头部个人形象区 -->
+        <header class="portal-hero">
+            <div class="portal-avatar-wrap">
+                <img src="/images/avatar.webp" alt="梓骍先生" class="portal-avatar">
+            </div>
+            <h1 class="portal-title">梓骍先生</h1>
+            <p class="portal-motto">“只愿寻求一方净土 偏安一隅”</p>
+
+
+            <div class="portal-cta-group">
+                <a href="/archives/" class="btn-portal-secondary">
+                    <i class="fa fa-archive"></i> 全站档案馆
+                </a>
+                <a href="/posts/" class="btn-portal-primary">
+                    <i class="fa fa-book"></i> 进入博客列表
+                </a>
+                <a href="/2023/03/22/AAAAHearder/" class="btn-portal-secondary">
+                    <i class="fa fa-history"></i> 建站大事件
+                </a>
+            </div>
+        </header>
+
+        <!-- 核心内容板块导引 -->
+        <section class="portal-section">
+            <h2 class="portal-section-title">
+                <i class="fa fa-th-large"></i> 核心专区导览
+            </h2>
+
+            
+
+            <div class="domain-grid">
+                <!-- 文学创作 -->
+                <div class="domain-card">
+                    <div>
+                        <div class="domain-header">
+                            <div class="domain-icon-box">
+                                <i class="fa fa-paint-brush"></i>
+                            </div>
+                            <div class="domain-title-wrap">
+                                <h3>文学创作</h3>
+                                <div class="domain-subtitle">散文随笔 · 叙事小说 · 人间观察</div>
+                            </div>
+                        </div>
+                        <p class="domain-desc">
+                            记东山口的红墙青瓦与宫粉羊蹄甲，写岁月中平凡而真挚的羁绊。收录散文与长短篇小说，代表作《漫步》、《师者》、《这通电话，来自天堂》。
                         </p>
                     </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2023-03-22T13:24:40.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2023-03-22</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E6%88%91%E7%9F%A5%E9%81%93%E6%B2%A1%E5%95%A5%E4%BA%BA%E7%9C%8B%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%89%80%E4%BB%A5%E8%BF%99%E4%B8%AA%E4%B8%9C%E8%A5%BF%E5%A4%A7%E6%A6%82%E7%8E%87%E5%8F%AA%E6%9C%89%E6%88%91%E8%87%AA%E5%B7%B1%E7%9C%8B%EF%BC%8C%E6%89%80%E4%BB%A5%E6%88%91%E4%BC%9A%E5%86%99%E5%81%8F%E5%90%91%E6%88%91%E8%87%AA%E5%B7%B1%E8%83%BD%E7%90%86%E8%A7%A3%E7%9A%84%E4%B8%9C%E8%A5%BF/" rel="tag">我知道没啥人看我的博客所以这个东西大概率只有我自己看，所以我会写偏向我自己能理解的东西</a>
-                            
+                    <div class="domain-footer">
+                        <span class="domain-count-tag"><i class="fa fa-file-text-o"></i> 57 篇作品</span>
+                        <a href="/categories/%E6%96%87%E7%AB%A0%E5%8C%BA/" class="domain-link">
+                            浏览专区 <i class="fa fa-angle-right"></i>
                         </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2023/03/22/AAAAHearder/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2026/08/31/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology06/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/">教育心理学</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2026/08/31/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology06/" itemprop="mainEntityOfPage"><span itemprop="name headline">教育心理学知识梳理陆——班级管理与教师心理</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                1 群体心理概述1.1 群体的概念群体是为了实现某种共同目标，其成员在心理上有一定联系，相呼影响、相互依存的一群人的集合体。
-1.2 群体的分类
-正式群体：根据制度、章程或其他要求正式成立的群体
-
-
-明文规定的
-班级、少先队、共青团
-...
-                            
-                        </p>
                     </div>
                 </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2026-08-31T01:00:00.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2026-08-31</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>, <a class="tag-none-link" href="/tags/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/" rel="tag">教育心理学</a>
-                            
-                        </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2026/08/31/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology06/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
 
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2026/08/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology05/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/">教育心理学</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2026/08/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology05/" itemprop="mainEntityOfPage"><span itemprop="name headline">教育心理学知识梳理伍——德育原则方法与途径</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                1 德育原则口诀：陶行知集体疏导一连学生、积极守纪律，才有尊严
-【导向性原则 &#x2F; 方向性原则】理想性与方向性，政治方向
-【疏导性原则 &#x2F; 循循善诱原则】循循善诱、以理服人
-
-夫子循循然善诱人，博我以文，约我以礼，欲...
-                            
+                <!-- 学研知识 -->
+                <div class="domain-card">
+                    <div>
+                        <div class="domain-header">
+                            <div class="domain-icon-box">
+                                <i class="fa fa-flask"></i>
+                            </div>
+                            <div class="domain-title-wrap">
+                                <h3>基础知识库</h3>
+                                <div class="domain-subtitle">教育学 · 心理学 · 语文 · 生物学</div>
+                            </div>
+                        </div>
+                        <p class="domain-desc">
+                            系统化专业复习与实验技术梳理。涵盖土壤养分循环、孟德尔遗传规律推导、RNA提取、生物统计及教师资格备考笔记。
                         </p>
                     </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2026-08-30T01:00:00.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2026-08-30</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>, <a class="tag-none-link" href="/tags/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/" rel="tag">教育心理学</a>
-                            
+                    <div class="domain-footer">
+                        <span class="domain-count-tag"><i class="fa fa-file-text-o"></i> 62 篇笔记</span>
+                        <a href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" class="domain-link">
+                            查阅笔记 <i class="fa fa-angle-right"></i>
                         </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2026/08/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology05/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2026/08/28/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology04/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/">教育心理学</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2026/08/28/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology04/" itemprop="mainEntityOfPage"><span itemprop="name headline">教育心理学知识梳理肆——人格发展与心理辅导</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                1 埃里克森社会性发展理论
-
-
-阶段及年龄
-冲突
-
-
-
-
-婴儿期0-1.5岁
-信任对怀疑（能否建立安全感？）
-–
-
-
-儿童早期1.5-3岁
-自主对羞怯自主感：自己的事情自己做
-–
-
-
-学前期3-6、7岁
-主动与愧疚主动感：主动探索世界...
-                            
-                        </p>
                     </div>
                 </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2026-08-28T01:00:00.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2026-08-28</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>, <a class="tag-none-link" href="/tags/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/" rel="tag">教育心理学</a>
-                            
-                        </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2026/08/28/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology04/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
 
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2026/08/27/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology03/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/">教育心理学</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2026/08/27/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology03/" itemprop="mainEntityOfPage"><span itemprop="name headline">教育心理学知识梳理叁——认知风格与人格概述</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                1 个别差异与因材施教——认知风格【场独立；场依存】
-场独立：内部定向、不宜受别人影响（有主见，独立思考）
-
-场依存：外部定向、易受别人影响（察言观色）
-
-
-
-
-
-
-场独立型
-场依存型
-
-
-
-学科兴趣
-数学、自然科学
-社会科学、人文科...
-                            
+                <!-- 极客工具 -->
+                <div class="domain-card">
+                    <div>
+                        <div class="domain-header">
+                            <div class="domain-icon-box">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <div class="domain-title-wrap">
+                                <h3>极客与工具</h3>
+                                <div class="domain-subtitle">开源脚本 · AI落地 · Python组件</div>
+                            </div>
+                        </div>
+                        <p class="domain-desc">
+                            编程实践与实用工具整理。收录自研开源的 Minecraft 自动钓鱼脚本 (AutoFD) 与实用 Python 模块合集。
                         </p>
                     </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2026-08-27T13:00:00.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2026-08-27</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>, <a class="tag-none-link" href="/tags/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/" rel="tag">教育心理学</a>
-                            
+                    <div class="domain-footer">
+                        <span class="domain-count-tag"><i class="fa fa-file-text-o"></i> 6 篇实践</span>
+                        <a href="/categories/%E5%B7%A5%E5%85%B7%E5%8C%BA/" class="domain-link">
+                            查看工具 <i class="fa fa-angle-right"></i>
                         </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2026/08/27/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology03/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2026/08/27/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology02/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/">教育心理学</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2026/08/27/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology02/" itemprop="mainEntityOfPage"><span itemprop="name headline">教育心理学知识梳理贰——学习心理</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                1 学习迁移1.1学习迁移的概念是一种学习对另一种学习的影响，习得的经验对完成其他活动的影响。（举一反三，触类旁通）
-1.2 学习迁移的分类【迁移性质与结果】
-正迁移
-
-
-积极的促进作用
-如学习英语利于法语的学习
-
-
-负迁移
-
-
-消极...
-                            
-                        </p>
                     </div>
                 </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2026-08-27T04:35:00.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2026-08-27</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>, <a class="tag-none-link" href="/tags/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/" rel="tag">教育心理学</a>
-                            
-                        </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2026/08/27/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology02/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
             </div>
-        </article>
-    
+        </section>
 
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2026/08/26/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology01/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/">教育心理学</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2026/08/26/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology01/" itemprop="mainEntityOfPage"><span itemprop="name headline">教育心理学知识梳理壹——中学生学习心理</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                1 学习动机分类——一般分类（一）动力来源【内部动机】内在需求、好奇心、求知欲、学习兴趣
-【外部动机】外部诱因，外部奖励
-（二）社会意义【高尚动机】利他主义，国家、社会
-【低级动机】利己主义，自己的利益
-（三）与学习活动的远近关系【远...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2026-08-26T11:57:00.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2026-08-26</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>, <a class="tag-none-link" href="/tags/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/" rel="tag">教育心理学</a>
-                            
-                        </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2026/08/26/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology01/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
+        <!-- 站点概览统计 -->
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-item-num">128</div>
+                <div class="stat-item-label">篇博文收录</div>
             </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2026/08/26/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%AD%A6/Education05/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%AD%A6/">教育学</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2026/08/26/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%AD%A6/Education05/" itemprop="mainEntityOfPage"><span itemprop="name headline">教育学知识梳理伍——中学教学</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                1 教学原则冯巩找阴凉，寻思理直发
-【直观性原则】清晰表象、感性认识
-
-荀子：不闻不若闻之，闻之不若见之
-夸美纽斯：一切只是都是从感官开始的
-
-分类：
-
-实物直观（真的，标本也算）
-模象直观（假的，如视频）
-言语直观（用生动形象的语言...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2026-08-26T01:57:00.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2026-08-26</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>, <a class="tag-none-link" href="/tags/%E6%95%99%E8%82%B2%E5%AD%A6/" rel="tag">教育学</a>
-                            
-                        </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2026/08/26/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%AD%A6/Education05/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
+            <div class="stat-item">
+                <div class="stat-item-num">25</div>
+                <div class="stat-item-label">个内容专栏</div>
             </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2026/08/25/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%AD%A6/Education04/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%AD%A6/">教育学</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2026/08/25/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%AD%A6/Education04/" itemprop="mainEntityOfPage"><span itemprop="name headline">教育学知识梳理肆——课程与新课改</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                1 课程分类
-
-
-分类标准
-内容
-口诀
-
-
-
-内容属性
-学科课程、活动课程（经验课程）
-属性动动学学
-
-
-组织方式
-分科课程、综合课程
-组织分分合合
-
-
-实施要求
-必修课程、选修课程
-要求必修选修
-
-
-开发主体
-国家课程、地方课程、校...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2026-08-25T11:57:00.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2026-08-25</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>, <a class="tag-none-link" href="/tags/%E6%95%99%E8%82%B2%E5%AD%A6/" rel="tag">教育学</a>
-                            
-                        </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2026/08/25/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%AD%A6/Education04/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
+            <div class="stat-item">
+                <div class="stat-item-num">46</div>
+                <div class="stat-item-label">个标签索引</div>
             </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2026/08/23/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%AD%A6/Education03/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a> <a class="label-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%AD%A6/">教育学</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2026/08/23/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%AD%A6/Education03/" itemprop="mainEntityOfPage"><span itemprop="name headline">教育学知识梳理叁——教育与社会、人的发展</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                
-社会因素制约教育发展
-教育反作用于（促进）社会因素
-
-1 生产力与教育的关系龟速构防守，两再一新促生长
-生产力对教育的制约作用——决定教育发展水平
-决定教育的速度和规模
-制约人才培养的规格和教育结构
-制约着教学的内容、方法、组织形式...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2026-08-23T08:45:00.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2026-08-23</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" rel="tag">基础知识区</a>, <a class="tag-none-link" href="/tags/%E6%95%99%E8%82%B2%E5%AD%A6/" rel="tag">教育学</a>
-                            
-                        </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2026/08/23/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%AD%A6/Education03/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
+            <div class="stat-item">
+                <div class="stat-item-num">2023 - 2026</div>
+                <div class="stat-item-label">持续运转维护</div>
             </div>
-        </article>
-    
+        </div>
 
+        <!-- 站长心声与碎碎念 -->
+        <section class="portal-thoughts-section">
+            <h2 class="portal-section-title">
+                <i class="fa fa-quote-left"></i> 一些碎碎念
+            </h2>
+            <div class="portal-thoughts-card">
+                <p>我从小就很喜欢沉浸在一个只属于自己的世界之中，在一个狭小的天地里，点缀着属于我的足迹。这个博客的搭建可以说是一个偶然，但对于我而言，是一个必然。至少对于我而言，我实在是难以拒绝放课后/下班后拥有一个第二世界，这种网络的虚拟世界相比于所谓的高自由度的游戏世界而言，创造性实在是丰富。</p>
+                <p>「所以，尊敬的客人，欢迎来到我的世界。」这是一句很中二的话，但也是我从小到大，一直想要说出口的话，此刻写出来，何尝不是一种仅属于我自己的浪漫呢？</p>
+            </div>
+        </section>
 
-
-    <div class='text-center pagination'>
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+        <!-- 社交与联系栏 -->
+        <footer class="social-bar">
+            <a href="https://github.com/Canyat" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                <i class="fa fa-github"></i>
+            </a>
+            <a href="https://space.bilibili.com/20727607" target="_blank" rel="noopener noreferrer" class="social-link" title="Bilibili">
+                <i class="fa fa-television"></i>
+            </a>
+            <a href="mailto:carlocanyat@gmail.com" class="social-link" title="发送邮件">
+                <i class="fa fa-envelope-o"></i>
+            </a>
+        </footer>
     </div>
-
-
-
-    <div class="hidden">
-        <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
-        
-    </div>
-
+</div>
 
 
         
@@ -819,360 +895,6 @@
         
 
                 
-            
-
-<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
-    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
-    
-        <div class="sticky-area">
-    
-    
-                <aside id="krw-about" class="widget widget-kratos-about clearfix">
-    <div class="photo-background"></div>
-    <div class="photo-wrapper clearfix">
-        <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
-        </div>
-    </div>
-    <div class="textwidget">
-        <p class="text-center">是小月月哦</p>
-    </div>
-    <div class="site-meta">
-        <a class="meta-item" href="/archives/">
-            <span class="title">
-                文章
-            </span>
-            <span class="count">
-                128
-            </span>
-        </a>
-        <a class="meta-item" href="/categories/">
-            <span class="title">
-                分类
-            </span>
-            <span class="count">
-                25
-            </span>
-        </a>
-        <a class="meta-item" href="/tags/">
-            <span class="title">
-                标签
-            </span>
-            <span class="count">
-                46
-            </span>
-        </a>
-    </div>
-</aside>
-            
-                
-  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
-    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/">基础知识区</a><span class="category-list-count">62</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E4%BD%9C%E7%89%A9%E6%A0%BD%E5%9F%B9%E5%AD%A6/">作物栽培学</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E4%BD%9C%E7%89%A9%E8%82%B2%E7%A7%8D%E5%AD%A6/">作物育种学</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%86%9C%E4%B8%9A%E4%BF%A1%E6%81%AF%E5%AD%A6/">农业信息学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/">农业推广学</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/">分子生物学</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/">土壤肥料学</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%AD%A6/">教育学</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/">教育心理学</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%A4%8D%E7%89%A9%E4%BF%9D%E6%8A%A4/">植物保护</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E7%94%9F%E7%89%A9%E7%BB%9F%E8%AE%A1%E5%AD%A6/">生物统计学</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E8%8B%B1%E6%96%87%E5%86%99%E4%BD%9C/">英文写作</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E8%AF%AD%E6%96%87/">语文</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E9%81%97%E4%BC%A0%E5%AD%A6/">遗传学</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E9%A9%BE%E7%85%A7%E8%80%83%E8%AF%95/">驾照考试</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7%E5%8C%BA/">工具区</a><span class="category-list-count">6</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7%E5%8C%BA/ChatGPT/">ChatGPT</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7%E5%8C%BA/Python/">Python</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7%E5%8C%BA/%E7%A7%91%E7%A0%94%E5%B7%A5%E5%85%B7/">科研工具</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7%E5%8C%BA/%E8%B5%84%E6%BA%90%E6%90%9C%E7%B4%A2/">资源搜索</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%96%87%E7%AB%A0%E5%8C%BA/">文章区</a><span class="category-list-count">57</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%96%87%E7%AB%A0%E5%8C%BA/%E6%95%A3%E6%96%87/">散文</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%B8%E6%88%8F%E5%8C%BA/">游戏区</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%B8%E6%88%8F%E5%8C%BA/Minecraft/">Minecraft</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%8D%95%E7%8B%AC%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5%E5%88%86%E5%8C%BA/">这是一个单独的碎碎念分区</a><span class="category-list-count">1</span></li></ul>
-  </aside>
-
-
-            
-                
-  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
-    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
-      <div class="tag-clouds">
-        <a href="/tags/ChatGPT/" style="font-size: 0.6em;">ChatGPT</a> <a href="/tags/Minecraft/" style="font-size: 0.6em;">Minecraft</a> <a href="/tags/Python/" style="font-size: 0.67em;">Python</a> <a href="/tags/%E4%BA%BA%E5%85%BD/" style="font-size: 0.6em;">人兽</a> <a href="/tags/%E4%BA%BA%E7%94%9F/" style="font-size: 0.6em;">人生</a> <a href="/tags/%E4%BD%9C%E7%89%A9%E6%A0%BD%E5%9F%B9%E5%AD%A6/" style="font-size: 0.63em;">作物栽培学</a> <a href="/tags/%E4%BD%9C%E7%89%A9%E8%82%B2%E7%A7%8D%E5%AD%A6/" style="font-size: 0.67em;">作物育种学</a> <a href="/tags/%E5%86%9C%E4%B8%9A%E4%BF%A1%E6%81%AF%E5%AD%A6/" style="font-size: 0.6em;">农业信息学</a> <a href="/tags/%E5%86%9C%E4%B8%9A%E6%8E%A8%E5%B9%BF%E5%AD%A6/" style="font-size: 0.73em;">农业推广学</a> <a href="/tags/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/" style="font-size: 0.63em;">分子生物学</a> <a href="/tags/%E5%88%9D%E6%81%8B/" style="font-size: 0.6em;">初恋</a> <a href="/tags/%E5%9B%9E%E5%BF%86/" style="font-size: 0.6em;">回忆</a> <a href="/tags/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/" style="font-size: 0.77em;">土壤肥料学</a> <a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/" style="font-size: 0.8em;">基础知识区</a> <a href="/tags/%E5%A5%87%E5%B9%BB/" style="font-size: 0.63em;">奇幻</a> <a href="/tags/%E5%B0%8F%E6%95%85%E4%BA%8B/" style="font-size: 0.6em;">小故事</a> <a href="/tags/%E5%B0%91%E5%B9%B4%E8%AF%89%E8%A1%B7%E8%82%A0/" style="font-size: 0.6em;">少年诉衷肠</a> <a href="/tags/%E5%B7%A5%E5%85%B7%E5%8C%BA/" style="font-size: 0.7em;">工具区</a>
-      </div>
-  </aside>
-
-            
-                
-  <aside id="krw-posts" class="widget widget-kratos-posts">
-  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
-  <div class="tab-content">
-      <ul class="list-group">
-        
-        
-          
-          
-            <a class="list-group-item" href="/2026/08/31/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology06/"><i class="fa  fa-book"></i> 教育心理学知识梳理陆——班级管理与教师心理</a>
-            
-          
-        
-          
-          
-            <a class="list-group-item" href="/2026/08/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology05/"><i class="fa  fa-book"></i> 教育心理学知识梳理伍——德育原则方法与途径</a>
-            
-          
-        
-          
-          
-            <a class="list-group-item" href="/2026/08/28/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology04/"><i class="fa  fa-book"></i> 教育心理学知识梳理肆——人格发展与心理辅导</a>
-            
-          
-        
-          
-          
-            <a class="list-group-item" href="/2026/08/27/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology03/"><i class="fa  fa-book"></i> 教育心理学知识梳理叁——认知风格与人格概述</a>
-            
-          
-        
-          
-          
-            <a class="list-group-item" href="/2026/08/27/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology02/"><i class="fa  fa-book"></i> 教育心理学知识梳理贰——学习心理</a>
-            
-          
-        
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-      </ul>
-  </div>
-  </aside>
-
-            
-    </div>
-</section>
-        
         </div>
     </div>
 </div>
@@ -1275,6 +997,59 @@
 
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
+<script>
+(function() {
+    function syncPortalLayout() {
+        var isPortal = !!document.querySelector('.portal-wrapper');
+        document.body.classList.toggle('is-portal', isPortal);
+        var hero = document.querySelector('.kratos-hero-2');
+        var blogPost = document.getElementById('kratos-blog-post');
+        if (hero) {
+            hero.style.display = isPortal ? 'none' : '';
+        }
+        if (blogPost) {
+            blogPost.classList.toggle('portal-page-container', isPortal);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', syncPortalLayout);
+    } else {
+        syncPortalLayout();
+    }
+
+    if (window.jQuery) {
+        window.jQuery(document).on('click', 'a', function() {
+            var href = window.jQuery(this).attr('href');
+            if (href === '/' || href === (window.kr && window.kr.siteRoot) || href === window.location.origin + '/') {
+                window.jQuery('body,html').stop(true);
+            }
+        });
+    }
+
+    window.addEventListener('pjax:complete', function() {
+        syncPortalLayout();
+        var isPortal = !!document.querySelector('.portal-wrapper');
+        if (isPortal) {
+            if (window.jQuery) {
+                window.jQuery('body,html').stop(true).scrollTop(0);
+            } else {
+                window.scrollTo(0, 0);
+            }
+        } else if (window.location.pathname.endsWith('/posts/') || window.location.pathname === '/posts') {
+            if (window.jQuery) {
+                window.jQuery('body,html').stop(true).scrollTop(0);
+            } else {
+                window.scrollTo(0, 0);
+            }
+        }
+    });
+
+    window.addEventListener('popstate', function() {
+        setTimeout(syncPortalLayout, 20);
+    });
+})();
+</script>
 
 
 
