@@ -222,7 +222,7 @@ body:has(.portal-wrapper) #kratos-blog-post,
 .portal-hero {
     text-align: center;
     padding-bottom: 38px;
-    border-bottom: 1px solid hsla(40, 18%, 74%, 0.35);
+    border-bottom: 1px solid transparent;
     margin-bottom: 38px;
 }
 
@@ -555,7 +555,7 @@ body.dark .portal-motto {
 
 html[data-theme="dark"] .portal-hero,
 body.dark .portal-hero {
-    border-bottom-color: rgba(90, 80, 64, 0.5);
+    border-bottom-color: transparent;
 }
 
 html[data-theme="dark"] .portal-avatar,
@@ -732,20 +732,191 @@ body.dark .social-link:hover {
         justify-content: center;
     }
 }
+
+/* ==========================================================================
+   入场动效：个人形象聚焦展露 -> 抛物线平滑缩小 -> 其他卡片从容浮现
+   ========================================================================== */
+
+.portal-hero-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform-origin: center center;
+    will-change: transform, opacity;
+    animation: heroParabolicShrink 3s forwards;
+}
+
+@keyframes heroParabolicShrink {
+    0% {
+        opacity: 0;
+        transform: translateY(230px) scale(1.7);
+        animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    66.67% {
+        opacity: 1;
+        transform: translateY(230px) scale(1.7);
+        animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 1024px) {
+    @keyframes heroParabolicShrink {
+        0% {
+            opacity: 0;
+            transform: translateY(160px) scale(1.5);
+            animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        66.67% {
+            opacity: 1;
+            transform: translateY(160px) scale(1.5);
+            animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .portal-hero-badge {
+        animation-name: heroParabolicShrinkMobile;
+    }
+    @keyframes heroParabolicShrinkMobile {
+        0% {
+            opacity: 0;
+            transform: translateY(90px) scale(1.3);
+            animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        66.67% {
+            opacity: 1;
+            transform: translateY(90px) scale(1.3);
+            animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+}
+
+/* 头部下划分割线在个人形象缩小归位时淡入 */
+.portal-hero {
+    animation: portalHeroBorderFade 0.6s ease 2.45s forwards;
+}
+
+@keyframes portalHeroBorderFade {
+    to {
+        border-bottom-color: hsla(40, 18%, 74%, 0.35);
+    }
+}
+
+html[data-theme="dark"] .portal-hero,
+body.dark .portal-hero {
+    animation-name: portalHeroBorderFadeDark;
+}
+
+@keyframes portalHeroBorderFadeDark {
+    to {
+        border-bottom-color: rgba(90, 80, 64, 0.4);
+    }
+}
+
+/* 后续卡片与模块平滑浮现 */
+.portal-reveal-item {
+    opacity: 0;
+    transform: translateY(22px);
+    will-change: transform, opacity;
+    animation: portalItemFadeIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* 依次递进浮现时序 */
+.portal-cta-group.portal-reveal-item {
+    animation-delay: 2.50s;
+}
+
+.portal-section.portal-reveal-item {
+    animation-delay: 2.65s;
+}
+
+.stats-bar.portal-reveal-item {
+    animation-delay: 3.02s;
+}
+
+.portal-thoughts-section.portal-reveal-item {
+    animation-delay: 3.12s;
+}
+
+.social-bar.portal-reveal-item {
+    animation-delay: 3.22s;
+}
+
+/* 核心专区三大卡片阶梯式滑入 */
+.domain-card.portal-reveal-card {
+    opacity: 0;
+    transform: translateY(20px);
+    will-change: transform, opacity;
+    animation: portalItemFadeIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.domain-card.portal-reveal-card:nth-child(1) {
+    animation-delay: 2.72s;
+}
+
+.domain-card.portal-reveal-card:nth-child(2) {
+    animation-delay: 2.82s;
+}
+
+.domain-card.portal-reveal-card:nth-child(3) {
+    animation-delay: 2.92s;
+}
+
+@keyframes portalItemFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 尊重用户系统的减少动画偏好 */
+@media (prefers-reduced-motion: reduce) {
+    .portal-hero-badge,
+    .portal-hero,
+    .portal-reveal-item,
+    .domain-card.portal-reveal-card {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+        border-bottom-color: hsla(40, 18%, 74%, 0.35) !important;
+    }
+    html[data-theme="dark"] .portal-hero,
+    body.dark .portal-hero {
+        border-bottom-color: rgba(90, 80, 64, 0.4) !important;
+    }
+}
 </style>
 
 <div class="portal-container">
     <div class="portal-card">
         <!-- 头部个人形象区 -->
         <header class="portal-hero">
-            <div class="portal-avatar-wrap">
-                <img src="/images/avatar.webp" alt="梓骍先生" class="portal-avatar">
+            <div class="portal-hero-badge">
+                <div class="portal-avatar-wrap">
+                    <img src="/images/avatar.webp" alt="梓骍先生" class="portal-avatar">
+                </div>
+                <h1 class="portal-title">梓骍先生</h1>
+                <p class="portal-motto">“只愿寻求一方净土 偏安一隅”</p>
             </div>
-            <h1 class="portal-title">梓骍先生</h1>
-            <p class="portal-motto">“只愿寻求一方净土 偏安一隅”</p>
 
-
-            <div class="portal-cta-group">
+            <div class="portal-cta-group portal-reveal-item">
                 <a href="/archives/" class="btn-portal-secondary">
                     <i class="fa fa-archive"></i> 全站档案馆
                 </a>
@@ -759,7 +930,7 @@ body.dark .social-link:hover {
         </header>
 
         <!-- 核心内容板块导引 -->
-        <section class="portal-section">
+        <section class="portal-section portal-reveal-item">
             <h2 class="portal-section-title">
                 <i class="fa fa-th-large"></i> 核心专区导览
             </h2>
@@ -768,7 +939,7 @@ body.dark .social-link:hover {
 
             <div class="domain-grid">
                 <!-- 文学创作 -->
-                <div class="domain-card">
+                <div class="domain-card portal-reveal-card">
                     <div>
                         <div class="domain-header">
                             <div class="domain-icon-box">
@@ -792,7 +963,7 @@ body.dark .social-link:hover {
                 </div>
 
                 <!-- 学研知识 -->
-                <div class="domain-card">
+                <div class="domain-card portal-reveal-card">
                     <div>
                         <div class="domain-header">
                             <div class="domain-icon-box">
@@ -816,7 +987,7 @@ body.dark .social-link:hover {
                 </div>
 
                 <!-- 极客工具 -->
-                <div class="domain-card">
+                <div class="domain-card portal-reveal-card">
                     <div>
                         <div class="domain-header">
                             <div class="domain-icon-box">
@@ -842,7 +1013,7 @@ body.dark .social-link:hover {
         </section>
 
         <!-- 站点概览统计 -->
-        <div class="stats-bar">
+        <div class="stats-bar portal-reveal-item">
             <div class="stat-item">
                 <div class="stat-item-num">128</div>
                 <div class="stat-item-label">篇博文收录</div>
@@ -862,7 +1033,7 @@ body.dark .social-link:hover {
         </div>
 
         <!-- 站长心声与碎碎念 -->
-        <section class="portal-thoughts-section">
+        <section class="portal-thoughts-section portal-reveal-item">
             <h2 class="portal-section-title">
                 <i class="fa fa-quote-left"></i> 一些碎碎念
             </h2>
@@ -873,7 +1044,7 @@ body.dark .social-link:hover {
         </section>
 
         <!-- 社交与联系栏 -->
-        <footer class="social-bar">
+        <footer class="social-bar portal-reveal-item">
             <a href="https://github.com/Canyat" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
                 <i class="fa fa-github"></i>
             </a>
