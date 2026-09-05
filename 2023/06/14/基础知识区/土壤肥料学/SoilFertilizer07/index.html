@@ -448,14 +448,16 @@
     
         <link rel="stylesheet" href="/vendors/gitalk@1.7.2/dist/gitalk.css"></script>
 <div id="gitalk-container" class="post-comments lazy-load" style="padding-left:2rem; padding-right:2rem;"></div>
+
 <script>
     var load_comm = () => {
         const init = () => {
             console.log('Gitalk loading...');
-            const gitalk = new Gitalk(Object.assign({
-                id: '/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer07/',
+            const gitalkConfig = JSON.parse('{"clientID":"7b8093d3061a99b5b582","clientSecret":"f7c6188fd1e5cf0eac70ccceab90b8e65eac76a3","repo":"Canyat.github.io","owner":"Canyat","admin":["Canyat"],"distractionFreeMode":false}');
+            const gitalk = new Gitalk(Object.assign(gitalkConfig, {
+                id: '3fa1ae5094b9faa6a3ffee7532f6467f',
                 path: '/2023/06/14/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E5%9C%9F%E5%A3%A4%E8%82%A5%E6%96%99%E5%AD%A6/SoilFertilizer07/'
-            }, JSON.parse('{"clientID":"7b8093d3061a99b5b582","clientSecret":"f7c6188fd1e5cf0eac70ccceab90b8e65eac76a3","repo":"Canyat.github.io","owner":"Canyat","admin":["Canyat"],"distractionFreeMode":false}')));
+            }));
 
             gitalk.render('gitalk-container');
         }

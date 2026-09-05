@@ -467,14 +467,16 @@
     
         <link rel="stylesheet" href="/vendors/gitalk@1.7.2/dist/gitalk.css"></script>
 <div id="gitalk-container" class="post-comments lazy-load" style="padding-left:2rem; padding-right:2rem;"></div>
+
 <script>
     var load_comm = () => {
         const init = () => {
             console.log('Gitalk loading...');
-            const gitalk = new Gitalk(Object.assign({
-                id: '/2026/08/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology05/',
+            const gitalkConfig = JSON.parse('{"clientID":"7b8093d3061a99b5b582","clientSecret":"f7c6188fd1e5cf0eac70ccceab90b8e65eac76a3","repo":"Canyat.github.io","owner":"Canyat","admin":["Canyat"],"distractionFreeMode":false}');
+            const gitalk = new Gitalk(Object.assign(gitalkConfig, {
+                id: 'fbb266e922c650b47206633755afcf03',
                 path: '/2026/08/30/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%8C%BA/%E6%95%99%E8%82%B2%E5%BF%83%E7%90%86%E5%AD%A6/EducationalPsychology05/'
-            }, JSON.parse('{"clientID":"7b8093d3061a99b5b582","clientSecret":"f7c6188fd1e5cf0eac70ccceab90b8e65eac76a3","repo":"Canyat.github.io","owner":"Canyat","admin":["Canyat"],"distractionFreeMode":false}')));
+            }));
 
             gitalk.render('gitalk-container');
         }

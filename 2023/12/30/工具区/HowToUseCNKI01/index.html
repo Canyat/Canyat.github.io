@@ -368,14 +368,16 @@
     
         <link rel="stylesheet" href="/vendors/gitalk@1.7.2/dist/gitalk.css"></script>
 <div id="gitalk-container" class="post-comments lazy-load" style="padding-left:2rem; padding-right:2rem;"></div>
+
 <script>
     var load_comm = () => {
         const init = () => {
             console.log('Gitalk loading...');
-            const gitalk = new Gitalk(Object.assign({
-                id: '/2023/12/30/%E5%B7%A5%E5%85%B7%E5%8C%BA/HowToUseCNKI01/',
+            const gitalkConfig = JSON.parse('{"clientID":"7b8093d3061a99b5b582","clientSecret":"f7c6188fd1e5cf0eac70ccceab90b8e65eac76a3","repo":"Canyat.github.io","owner":"Canyat","admin":["Canyat"],"distractionFreeMode":false}');
+            const gitalk = new Gitalk(Object.assign(gitalkConfig, {
+                id: '3ef86da9064224d2dc3893bc9637f4e1',
                 path: '/2023/12/30/%E5%B7%A5%E5%85%B7%E5%8C%BA/HowToUseCNKI01/'
-            }, JSON.parse('{"clientID":"7b8093d3061a99b5b582","clientSecret":"f7c6188fd1e5cf0eac70ccceab90b8e65eac76a3","repo":"Canyat.github.io","owner":"Canyat","admin":["Canyat"],"distractionFreeMode":false}')));
+            }));
 
             gitalk.render('gitalk-container');
         }
